@@ -1,6 +1,10 @@
   body {
     margin: 0
   }
+
+  h3 {
+    font-family:  'Open Sans', sans-serif;
+  }
   #nav {
     height: 60px;
     width: 100%;
@@ -122,4 +126,87 @@
     border-radius: 5px;
     text-align: right;
     left: 27%
+  }
+
+  #footer {
+    font-family:  'Open Sans', sans-serif;
+    position: relative;
+  }
+
+  #locations {
+    position: relative;
+    left: 10%;
+    display: inline
+  }
+
+  #locA {
+    top: 5px;
+    left: 10%;
+    position: relative;
+    width: 20%;
+    display: inline;
+    list-style-type: none;
+  }
+
+  #locB {
+    left: 10%;
+    position: relative;
+    margin-top: 10px;
+    width: 20%;
+    display: inline;
+    list-style-type: none
+  }
+
+  #hours {
+    position: relative;
+    display: inline;
+    left: 30%;
+    bottom: 180px;
+    list-style-type: none;
+  }
+
+  #hours-header {
+    display: inline
+  }
+
+  #hours-list {
+    position: relative;
+    top: 5px
+  }
+
+  #logoTwo {
+    position: relative;
+    left: 45%;
+    bottom: 245px
+  }
+
+  .fab {
+    font-size:50px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px
+  }
+
+  .fab:hover {
+    background-color: black;
+    color: white
+  }
+
+  #facebook {
+    position: relative;
+    bottom: 300px;
+    left: 50%
+  }
+
+  #yelp {
+    position: relative;
+    bottom: 300px;
+    left: 55%
+  }
+
+  #instagram {
+    position: relative;
+    bottom: 300px;
+    left: 60%
   }
