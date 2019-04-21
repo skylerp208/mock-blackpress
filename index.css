@@ -2,6 +2,10 @@
     margin: 0
   }
 
+  a {
+    text-decoration: none
+  }
+
   h3 {
     font-family:  'Open Sans', sans-serif;
   }
@@ -11,35 +15,68 @@
     position: absolute;
   }
 
+  #bars{
+    position: absolute;
+    font-size: 20px;
+    left: 95%;
+    top: 30px;
+    bottom: 3px;
+    height: 30px;
+    padding: 10px;
+    width: 20px
+  }
+
+  #dropdown {
+    height: 0px;
+    width: 150px;
+    top: 5px;
+    position: relative;
+    transition: height 300ms, background-color 300ms;
+    right: 120px
+  }
+
+  .drop-item {
+    opacity: 0;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    display: block;
+    text-align: right;
+    right: 5px;
+    padding-top: 20px;
+    padding-right: 20px;
+    transition: opacity 200ms
+  }
+
+  #bars:hover {
+    background-color: #333333;
+    color: white
+  }
+  #bars:hover #dropdown {
+    height: 140px;
+    background-color: #333333
+  }
+
+  #bars:hover .drop-item {
+    opacity: 1;
+    cursor: pointer;
+  }
+
   #black_press_logo {
     position: relative;
     bottom: -1.2em;
     left: 2%
   }
 
-  a {
-    text-decoration: none;
-    color: #222222;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    position: relative;
-    bottom: 0;
-    margin-left: 40px;
-    padding: 10px;
-    text-align: center
-  }
-
-  a:hover {
-    color: white;
-    background-color: #222222
-  }
 
   #stuff-one {
     position: relative;
-    background-color: #222222;
+    background-color: #111111;
     width: 100%;
     height: 30em;
-    top: 65px
+    top: 65px;
+    z-index: -200
   }
 
   .stuff-one-content {
@@ -128,6 +165,11 @@
     left: 27%
   }
 
+  #contentE:hover {
+    background-color: #111111;
+    color: white
+  }
+
   #footer {
     font-family:  'Open Sans', sans-serif;
     position: relative;
@@ -176,7 +218,7 @@
 
   #logoTwo {
     position: relative;
-    left: 45%;
+    left: 50%;
     bottom: 245px
   }
 
@@ -196,17 +238,28 @@
   #facebook {
     position: relative;
     bottom: 300px;
-    left: 50%
+    left: 55%
   }
 
   #yelp {
     position: relative;
     bottom: 300px;
-    left: 55%
+    left: 60%
   }
 
   #instagram {
     position: relative;
     bottom: 300px;
-    left: 60%
+    left: 65%
+  }
+
+  #rights {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #333333;
+    width: 100%;
+    color: white;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: lighter
   }
