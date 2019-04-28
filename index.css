@@ -1,5 +1,7 @@
+
   body {
-    margin: 0
+    margin: 0px;
+    overflow-x: hidden;
   }
 
   a {
@@ -9,10 +11,26 @@
   h3 {
     font-family:  'Open Sans', sans-serif;
   }
+
+  #container {
+    position: relative;
+    min-height: 100vh
+  }
+
   #nav {
-    height: 60px;
+    height: 65px;
     width: 100%;
     position: absolute;
+    top: 0px;
+    background-color: #F0F0F0;
+    z-index: 20
+  }
+
+  #home-page {
+    height: 10px;
+    position: relative;
+    top: 57px;
+    height: fit-content
   }
 
   #bars{
@@ -29,10 +47,22 @@
   #dropdown {
     height: 0px;
     width: 150px;
-    top: 5px;
-    position: relative;
+    top: 35px;
+    position: absolute;
     transition: height 300ms, background-color 300ms;
-    right: 120px
+    right: 0px;
+    z-index: 10;
+    pointer-events: none;
+  }
+
+  #about-page {
+    display: none;
+    position: relative;
+    top: 45px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 30rem;
+    background-color: white
   }
 
   .drop-item {
@@ -43,19 +73,22 @@
     position: relative;
     display: block;
     text-align: right;
-    right: 5px;
+    left: 20px;
     padding-top: 20px;
     padding-right: 20px;
-    transition: opacity 200ms
+    padding-left: 0;
+    width: 100px;
+    transition: opacity 100ms
   }
 
   #bars:hover {
-    background-color: #333333;
+    background-color: #202020;
     color: white
   }
   #bars:hover #dropdown {
     height: 140px;
-    background-color: #333333
+    background-color: #202020;
+    pointer-events: all;
   }
 
   #bars:hover .drop-item {
@@ -63,10 +96,10 @@
     cursor: pointer;
   }
 
+
   #black_press_logo {
-    position: relative;
-    bottom: -1.2em;
-    left: 2%
+    position: absolute;
+    display: block;
   }
 
 
@@ -75,8 +108,7 @@
     background-color: #111111;
     width: 100%;
     height: 30em;
-    top: 65px;
-    z-index: -200
+    /* top: 65px; */
   }
 
   .stuff-one-content {
@@ -87,18 +119,18 @@
   #contentA {
     position: absolute;
     width: 45%;
-    font-weight: 100px;
+    font-weight: lighter;
     left: 50%;
-    top: 15%;
+    top: 18%;
     line-height: 40px;
-    font-size: 25px
+    font-size: 18px
   }
 
 
   #contentC {
     position: absolute;
     left: 50%;
-    top: 250px;
+    top: 210px;
     font-size: 15px;
     padding: 0;
     margin: 0;
@@ -107,7 +139,8 @@
     padding-left: 35px;
     padding-right: 35px;
     border: 1px solid white;
-    border-radius: 5px
+    border-radius: 5px;
+    transition: background-color 300ms
   }
 
   #contentC:hover {
@@ -116,17 +149,27 @@
 
   #latte_art {
     position: absolute;
-    left: 10%;
-    top: 15%
+    left: 12%;
+    top: 10%
   }
 
   #stuff-two {
     position: relative;
     width: 100%;
-    height: 35em;
-    top: 100px
+    height: 28em;
+    top: 20px
   }
 
+  #lineA {
+    color: white;
+    position: relative;
+    background-color: white;
+    top: 19%;
+    width: 10%;
+    left: 5%;
+    margin-right: 0;
+    margin-left: 45%
+  }
   .stuff-two-content {
     color: #222222;
     font-family: 'Open Sans', sans-serif;
@@ -135,23 +178,51 @@
   #beans {
     position: absolute;
     left: 50%;
-    top: 10%
+    top: 5%
+  }
+
+  #who {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    left: 50%;
+    top: 8%
+  }
+
+  #our-coffee {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    text-align: right;
+    left: 33%;
+    top: 2%
+  }
+
+  #lineB {
+    margin: none;
+    width: 10%;
+    position: relative;
+    top: 13%;
+    right: 10%;
+    border-top: 1px solid black
   }
 
   #contentD {
     position: absolute;
-    width: 45%;
+    width: 40%;
     font-weight: 100px;
     line-height: 40px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: right;
     margin: 0;
-    top: 10%
+    top: 15%;
+    left: 5%
   }
 
   #contentE {
     position: absolute;
-    top: 320px;
+    top: 280px;
     font-size: 15px;
     padding: 0;
     margin: 0;
@@ -162,7 +233,8 @@
     border: 1px solid #222222;
     border-radius: 5px;
     text-align: right;
-    left: 27%
+    left: 27%;
+    transition: background-color 300ms
   }
 
   #contentE:hover {
@@ -172,7 +244,7 @@
 
   #footer {
     font-family:  'Open Sans', sans-serif;
-    position: relative;
+    position: relative
   }
 
   #locations {
@@ -186,17 +258,18 @@
     left: 10%;
     position: relative;
     width: 20%;
-    display: inline;
     list-style-type: none;
   }
 
+
+
   #locB {
     left: 10%;
+    top: 20px;
     position: relative;
     margin-top: 10px;
     width: 20%;
-    display: inline;
-    list-style-type: none
+    list-style-type: none;
   }
 
   #hours {
@@ -204,7 +277,6 @@
     display: inline;
     left: 30%;
     bottom: 180px;
-    list-style-type: none;
   }
 
   #hours-header {
@@ -213,7 +285,8 @@
 
   #hours-list {
     position: relative;
-    top: 5px
+    top: 5px;
+    width: 20%;
   }
 
   #logoTwo {
@@ -227,7 +300,8 @@
     height: 50px;
     width: 50px;
     text-align: center;
-    border-radius: 5px
+    border-radius: 5px;
+    padding: 5px
   }
 
   .fab:hover {
@@ -238,19 +312,19 @@
   #facebook {
     position: relative;
     bottom: 300px;
-    left: 55%
+    left: 55%;
   }
 
   #yelp {
     position: relative;
     bottom: 300px;
-    left: 60%
+    left: 60%;
   }
 
   #instagram {
     position: relative;
     bottom: 300px;
-    left: 65%
+    left: 65%;
   }
 
   #rights {
@@ -261,5 +335,22 @@
     height: 25px;
     text-align: center;
     font-size: 14px;
-    font-weight: lighter
+    font-weight: lighter;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem
+  }
+
+  #aboutA {
+    width: 100%;
+    top: 35px;
+    font-size: 18px;
+  }
+
+  #wide_shot {
+    position: relative;
+    left: 80%;
+    top: -100px
   }
